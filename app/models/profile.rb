@@ -1,4 +1,3 @@
-class Tag < ApplicationRecord
-  has_many :post_tag
-  has_many :posts, through: :post_tags
+class Profile < ApplicationRecord
+  belongs_to :author
 end
